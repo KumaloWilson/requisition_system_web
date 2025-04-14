@@ -9,7 +9,7 @@ import toast from "react-hot-toast"
 import type { Department } from "../types"
 
 const Profile = () => {
-  const { user, updateUserInfo } = useAuth()
+  const { user, updateUserContext } = useAuth()
   const [departments, setDepartments] = useState<Department[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -82,7 +82,7 @@ const Profile = () => {
       const updatedUser = response.data.data.user
 
       // Update user info in context
-      updateUserInfo(updatedUser)
+      updateUserContext(updatedUser)
 
       toast.success("Profile updated successfully")
     } catch (error) {

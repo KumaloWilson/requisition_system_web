@@ -92,7 +92,7 @@ export interface ApiResponse<T> {
 export interface PaginatedResponse<T> {
   status: string
   data: {
-    [key: string]: T[]
+    items: T[]
     pagination: Pagination
   }
 }
