@@ -51,7 +51,7 @@ const RequisitionList = () => {
         // Extract unique categories for filter dropdown
         const uniqueCategories = Array.from(
           new Set(response.data.data.requisitions.map((req: Requisition) => req.category)),
-        )
+        ) as string[]
         setCategories(uniqueCategories)
       } catch (error) {
         console.error("Failed to fetch requisitions:", error)
