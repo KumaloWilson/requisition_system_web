@@ -7,6 +7,7 @@ import RoleBasedRoute from "./components/RoleBasedRoute"
 import LoadingScreen from "./components/LoadingScreen"
 import Layout from "./components/Layout"
 
+
 // Lazy load pages for better performance
 const Login = lazy(() => import("./pages/auth/Login"))
 const Register = lazy(() => import("./pages/auth/Register"))
