@@ -1,0 +1,56 @@
+node_modules
+frontend/node_modules
+backend/node_modules
+frontend/dist/
+backend/dist/
+frontend/.env
+backend/.env
+*.log
+
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/zinwa_mobile/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/zinwa_mobile/android/app/debug
+/zinwa_mobile/android/app/profile
+/zinwa_mobile/android/app/release
+zinwa_mobile/android/app/.cxx
