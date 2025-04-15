@@ -40,18 +40,18 @@ const ApprovalHistory = () => {
     fetchApprovalHistory()
   }, [])
 
-  const getStatusIcon = (status: string) => {
-    switch (status) {
-      case "approved":
-        return <Check className="h-5 w-5 text-green-500" />
-      case "rejected":
-        return <X className="h-5 w-5 text-red-500" />
-      case "pending":
-        return <Clock className="h-5 w-5 text-yellow-500" />
-      default:
-        return null
-    }
-  }
+  // const getStatusIcon = (status: string) => {
+  //   switch (status) {
+  //     case "approved":
+  //       return <Check className="h-5 w-5 text-green-500" />
+  //     case "rejected":
+  //       return <X className="h-5 w-5 text-red-500" />
+  //     case "pending":
+  //       return <Clock className="h-5 w-5 text-yellow-500" />
+  //     default:
+  //       return null
+  //   }
+  // }
 
   const getStatusBadge = (status: string) => {
     switch (status) {
