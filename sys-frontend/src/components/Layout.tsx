@@ -53,11 +53,11 @@ const Layout = () => {
       <Sidebar id="sidebar" isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
 
       {/* Main Content */}
-      <div className="flex flex-col flex-1 overflow-hidden">
+      <div className="flex flex-col flex-1 md:ml-64 w-full">
         <Header sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
 
-        <main className="flex-1 overflow-y-auto p-4 md:p-6 bg-secondary-50">
-          <div className="max-w-7xl mx-auto animate-fade-in">
+        <main className="flex-1 overflow-y-auto p-4 md:p-6 bg-secondary-50 w-full">
+          <div className="w-full mx-auto animate-fade-in">
             <Outlet />
           </div>
         </main>

@@ -34,7 +34,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }: HeaderProps) => {
   }, [])
 
   return (
-    <header className="bg-white shadow-sm z-10 transition-all duration-200">
+    <header className="bg-white shadow-sm z-10 transition-all duration-200 w-full">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Left side - Mobile menu button and logo */}
@@ -95,7 +95,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }: HeaderProps) => {
 
               {/* Notifications dropdown */}
               {notificationsOpen && (
-                <div className="origin-top-right absolute right-0 mt-2 w-80 rounded-md shadow-dropdown bg-white ring-1 ring-black ring-opacity-5 focus:outline-none animate-slide-in">
+                <div className="origin-top-right absolute right-0 mt-2 w-80 rounded-md shadow-dropdown bg-white ring-1 ring-black ring-opacity-5 focus:outline-none animate-slide-in z-50">
                   <div className="py-2 px-4 border-b border-secondary-100">
                     <h3 className="text-sm font-medium text-secondary-900">Notifications</h3>
                   </div>
@@ -157,7 +157,7 @@ const Header = ({ sidebarOpen, setSidebarOpen }: HeaderProps) => {
 
               {/* User dropdown menu */}
               {userMenuOpen && (
-                <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-dropdown bg-white ring-1 ring-black ring-opacity-5 focus:outline-none animate-slide-in">
+                <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-dropdown bg-white ring-1 ring-black ring-opacity-5 focus:outline-none animate-slide-in z-50">
                   <div className="py-1">
                     <div className="px-4 py-2 border-b border-secondary-100">
                       <p className="text-sm font-medium text-secondary-900">

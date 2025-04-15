@@ -96,9 +96,9 @@ const Sidebar = ({ id, isOpen, setIsOpen }: SidebarProps) => {
       {/* Sidebar */}
       <aside
         id={id}
-        className={`fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out md:translate-x-0 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed inset-y-0 left-0 z-30 w-64 bg-white shadow-lg md:sticky md:top-0 md:h-screen ${
+          isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
+        } transition-transform duration-300 ease-in-out`}
       >
         {/* Sidebar header */}
         <div className="flex items-center justify-between h-16 px-4 border-b border-secondary-100 bg-gradient-to-r from-primary-700 to-primary-600 text-white">
